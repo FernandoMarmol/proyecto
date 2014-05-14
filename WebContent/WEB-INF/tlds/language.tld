@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd" xmlns="http://java.sun.com/xml/ns/javaee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+     
+	<tlibversion>1.0</tlibversion>
+	<info>Tag library for getting messages in any language available</info>
+	<display-name>language</display-name>
+	<short-name>language</short-name>
+	
+	<tag>
+		<name>getMessage</name>
+		<tag-class>com.boceto.tag.LanguageTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<!-- Identificador único a lo largo de la página, si no se indica se generará uno automáticamente -->
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<elexprvalue>true</elexprvalue>
+		</attribute>
+	</tag>
+</taglib>

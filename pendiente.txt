@@ -1,0 +1,9 @@
+1 - Borde inferior del body
+2 - Controlar que la sesión expire
+3 - Mail - Email (Unificar el nombre de estos campos)
+4 - Al enviar formulario y cargar la siguiente ventana, cargar los errores en la request para mostrarlos. Sacar los errores del validation
+5 - Problema al crear una request y pulsar F5, se crea la petición tantas veces como F5
+6 - Al insertar fotos en una nueva petición, verificar que no se duplícan. Animar la aparición de las fotos. Poder quitar fotos
+
+Posibilidades del Logo:
+ - Un muñeco queriendo dar la mano

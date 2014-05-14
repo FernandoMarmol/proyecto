@@ -1,0 +1,584 @@
+html {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	line-height: 1;
+}
+
+body{
+	padding: 0px; 
+	margin: 0px; 
+	width: 100%; 
+	height: 100%;
+}
+
+
+/********************************************************************************/
+/*************************************** COMMON *********************************/
+/********************************************************************************/
+div.rightAligned {
+	right: 0%;
+}
+
+span.subText{
+	font-size: 0.8em;
+}
+
+div.minWidth100px{
+	min-width: 100px !important;
+}
+
+div.minWidth200px{
+	min-width: 200px !important;
+}
+
+div.minWidth300px{
+	min-width: 300px !important;
+}
+
+div.minWidth400px{
+	min-width: 400px !important;
+}
+
+div.minWidth500px{
+	min-width: 500px !important;
+}
+
+div.minWidth600px{
+	min-width: 600px !important;
+}
+
+div.minWidth700px{
+	min-width: 700px !important;
+}
+
+div.minWidth800px{
+	min-width: 800px !important;
+}
+
+div.minWidth900px{
+	min-width: 900px !important;
+}
+
+div.minWidth1000px{
+	min-width: 1000px !important;
+}
+
+
+/********************************************************************************/
+/************************************ FIN COMMON ********************************/
+/********************************************************************************/
+
+
+/*******************************************************************************************/
+/*************************************** CAPAS PRINCIPALES *********************************/
+/*******************************************************************************************/
+div#content{
+	width: 100%; 
+	height: 100%;
+	display: block;
+}
+
+div#bodyHeader{
+	position: relative;
+	width: 100%;
+	height: 10%;
+	min-height: 2em;
+	padding: 4px;
+	overflow: hidden;
+	background: #F5F5F5;
+}
+
+div#bodyContent{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	overflow: auto;
+	border: 1px solid #AAAAAA;
+	-moz-box-shadow: 0 0 8px #999999;
+	-webkit-box-shadow: 0 0 8px #999999;
+	box-shadow: 0 0 8px #999999;
+	background: #DDDDDD;
+	text-align: left;
+}
+
+div#bodyFooter{
+	position: relative;
+	width: 100%;
+	height: 10%;
+	min-height: 2em;
+	padding: 4px;
+	overflow: hidden;
+	background: #F5F5F5;
+}
+/*******************************************************************************************/
+/************************************* FIN CAPAS PRINCIPALES********************************/
+/*******************************************************************************************/
+
+/*******************************************************************************************/
+/*************************************** CAPA TIPO 1 ***************************************/
+/*******************************************************************************************/
+div.type1 {
+	position: static; 
+	border: 2px solid #BA7F00; 
+	display: block; 
+	color: #BA7F00;
+	width: 35%; 
+	min-width: 150px;
+	min-height: 100px;
+	border-radius: 2px; 
+	padding: 1em;
+	margin: auto;
+	margin-top: 2em;
+	text-align: left;
+	background: #FFFAEE;
+	-webkit-box-shadow: -6px -6px 0px #E5CD99; 
+	-moz-box-shadow: -6px -6px 0px #E5CD99;
+	box-shadow: -6px -6px 0px #E5CD99;
+}
+
+div.type1:hover {
+	background: #FFF7E4;
+	-webkit-box-shadow: -6px -6px 0px #E5CD99; 
+	-moz-box-shadow: -6px -6px 0px #E5CD99;
+	box-shadow: -6px -6px 0px #E5CD99;
+}
+
+div.type1 button, input[type=submit] {
+	padding: 6px 10px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border: solid 1px #BA7F00;
+	color: #BA7F00;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+}
+
+div.type1 button.subButton, input[type=submit].subButton {
+	padding: 3px 5px;
+	font-size: 0.7em;
+}
+
+div.type1 button:hover, input[type=submit]:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+	-webkit-box-shadow: 0px 0px 1px 2px #E5CD99;
+}
+
+div.type1 button:active, input[type=submit]:active {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999999), to(#CCCCCC));
+}
+
+div.type1 button:disabled, input[type=submit]:disabled {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+	-webkit-box-shadow: 0px 0px 0px 0px;
+}
+
+div.type1 input[type=text]::-webkit-input-placeholder { color: #E5CD99; }
+div.type1 input[type=password]::-webkit-input-placeholder { color: #E5CD99; }
+div.type1 input[type=text], input[type=password] {
+	border: 2px #E5CD99 solid;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+/*******************************************************************************************/
+/********************************** FIN  CAPA TIPO 1 ***************************************/
+/*******************************************************************************************/
+
+/*******************************************************************************************/
+/*************************************** CAPA TIPO 2 ***************************************/
+/*******************************************************************************************/
+div.type2 {
+	position: relative; 
+	width: 70%;
+	height: 0%;
+	margin: 0px;
+	margin-left: 6px;
+	padding: 6px;
+	display: none;
+	border: 2px solid #BA7F00;
+	border-top: none;
+	background: #FFFAEE;
+	text-align: left;
+	color: #BA7F00;
+	overflow: auto;
+	border-bottom-left-radius: 15px; 
+	border-bottom-right-radius: 15px;
+}
+
+div.type2:hover {
+	background: #FFF7E4;
+}
+
+div.type2 button, input[type=submit] {
+	padding: 6px 10px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border: solid 1px #BA7F00;
+	color: #BA7F00;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+}
+
+div.type2 button.subButton, input[type=submit].subButton {
+	padding: 3px 5px;
+	font-size: 0.7em;
+}
+
+div.type2 button:hover, input[type=submit]:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+	-webkit-box-shadow: 0px 0px 1px 2px #E5CD99;
+}
+
+div.type2 button:active, input[type=submit]:active {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999999), to(#CCCCCC));
+}
+
+div.type2 button:disabled, input[type=submit]:disabled {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+	-webkit-box-shadow: 0px 0px 0px 0px;
+}
+
+div.type2 input[type=text]::-webkit-input-placeholder { color: #E5CD99; }
+div.type2 input[type=password]::-webkit-input-placeholder { color: #E5CD99; }
+div.type2 textarea::-webkit-input-placeholder { color: #E5CD99; }
+div.type2 input[type=text], input[type=password], textarea {
+	border: 2px #E5CD99 solid;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+/*******************************************************************************************/
+/********************************** FIN  CAPA TIPO 2 ***************************************/
+/*******************************************************************************************/
+
+/*************************************************************************************/
+/********************************** BOTONES ******************************************/
+/*************************************************************************************/
+/*NORMAL*/
+button.buttonNormal, input[type=submit].buttonNormal {
+	padding: 10px 10px;
+	border: solid 1px #BA7F00;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	white-space: nowrap;	
+	font-weight: bold;
+	width: auto;
+	cursor: pointer;
+	display: inline-block;
+	color: #BA7F00;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+}
+
+button.buttonNormal:hover, input[type=submit].buttonNormal:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+	-webkit-box-shadow: 0px 0px 1px 2px #E5CD99;
+}
+
+button.buttonNormal:active, input[type=submit].buttonNormal:active {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999999), to(#CCCCCC));
+}
+
+button.buttonNormal:disabled, input[type=submit].buttonNormal:disabled {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+	-webkit-box-shadow: 0px 0px 0px 0px;
+}
+
+/*SLIDE*/
+button.buttonSlide, input[type=submit].buttonSlide {
+	padding: 10px 10px;
+	border: solid 1px #BA7F00;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	white-space: nowrap;	
+	font-weight: bold;
+	width: auto;
+	cursor: pointer;
+	display: inline-block;
+	color: #BA7F00;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+}
+
+button.buttonSlide:hover, input[type=submit].buttonSlide:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+	-webkit-box-shadow: 0px 0px 1px 2px #E5CD99;
+}
+
+button.buttonSlide:active, input[type=submit].buttonSlide:active {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999999), to(#CCCCCC));
+}
+
+button.buttonSlide:disabled, input[type=submit].buttonSlide:disabled {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+	-webkit-box-shadow: 0px 0px 0px 0px;
+}
+
+/* LINK BUTTON*/
+/*NORMAL*/
+a.linkButton {
+	padding: 8px 8px;
+	border: solid 1px #BA7F00;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	white-space: nowrap;	
+	font-weight: normal;
+	width: auto;
+	cursor: pointer;
+	display: inline-block;
+	color: #BA7F00;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+}
+
+a.linkButton:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+	-webkit-box-shadow: 0px 0px 1px 2px #E5CD99;
+}
+
+a.linkButton:active {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999999), to(#CCCCCC));
+}
+
+a.linkButton:disabled {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(#E5CD99));
+	-webkit-box-shadow: 0px 0px 0px 0px;
+}
+/*************************************************************************************/
+/********************************** FIN BOTONES **************************************/
+/*************************************************************************************/
+
+/*******************************************************************************************/
+/****************************** CAPA DE RESULTADOS AJAX ************************************/
+/*******************************************************************************************/
+div#result {
+	padding: 0.5em;
+	position: absolute;
+	right: 25%;
+	bottom: 0%;
+	width: 50%;
+	height: 0%;
+	border-radius: 3px;
+	overflow: hidden;
+	white-space: normal;
+	opacity: 0.10;
+	display: none;
+	text-align:center;
+}
+
+div.info {
+	border: 2px solid #359ECF;
+	color: #359ECF;
+	background: #D2F1FF;
+}
+
+div.info:hover{
+	background: #A4E3FF;
+}
+
+div .infoTxt{
+	color: #359ECF;
+	font-weight: bold;
+}
+
+div.success {
+	border: 2px solid #32B856;
+	color: #32B856;
+	background: #C3FFD3;
+}
+
+div.success:hover{
+	background: #8BFFAA;
+}
+
+div .successTxt{
+	color: #32B856;
+	font-weight: bold;
+}
+
+div.error {
+	border: 2px solid #C23131;
+	color: #C23131;
+	background: #FFD0D0;
+}
+
+div.error:hover{
+	background: #FFABAB;
+}
+
+div .errorTxt{
+	color: #C23131;
+	font-weight: bold;
+}
+
+/*******************************************************************************************/
+/**************************** FIN CAPA DE RESULTADOS AJAX **********************************/
+/*******************************************************************************************/
+
+
+/*******************************************************************************************/
+/****************************** CAPA DE AVISO DE CARGA**************************************/
+/*******************************************************************************************/
+div#loadingDiv {
+	position: absolute; 
+	left: 45%;
+	width: 10%; 
+	height: 1em auto; 
+	padding: 0.3em; 
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid #359ECF;
+	color: #359ECF;
+	background: #D2F1FF;
+	display: none;
+	vertical-align: top;
+	box-shadow: -3px -3px 0px 0px #A4E3FF;
+	z-index: 100;
+}
+/*******************************************************************************************/
+/**************************** FIN - CAPA DE AVISO DE CARGA**********************************/
+/*******************************************************************************************/
+
+
+/*******************************************************************************************/
+/********************************* ESTILO DE LOS TOOLTIP ***********************************/
+/*******************************************************************************************/
+.tooltip {
+	/*por alguna razon, el opacity no vale al ponerlo aqui. Hay que ponerlo en los atributos del tooltip en el javascript
+	Si necesito ayuda sobre el tooltip:  http://jquerytools.org/documentation/tooltip/index.html */
+	padding: 1em;
+	margin: 0.15em;
+	background: #444444;
+	/*-webkit-box-shadow:  0px 0px 1px 1px rgba(0, 0, 0, 1);
+    box-shadow:  0px 0px 1px 1px rgba(0, 0, 0, 1);*/
+	border: 2px solid white;
+	border-radius: 4px;
+	color: white;
+}
+/*******************************************************************************************/
+/******************************* FIN ESTILO DE LOS TOOLTIP *********************************/
+/*******************************************************************************************/
+
+
+/**************************************************************************************************/
+/*************************************** OTROS POR ID *********************************************/
+/**************************************************************************************************/
+
+div#userInfo {
+	position: relative;
+	float: right;
+	top: 0%;
+	padding: 5px;
+	width: auto;
+	height: auto;
+	min-height: auto;
+	text-align: center;
+	margin-right: 1em;
+}
+
+div#noRegisteredDiv {
+	position: relative;
+	float: right;
+	margin: 0.5;
+	margin-top: 0.8em;
+}
+
+/**************************************************************************************************/
+/**************************************** FIN OTROS POR ID ****************************************/
+/**************************************************************************************************/
+
+/*****************************************************************************************************/
+/*************************************** OTROS POR CLASS *********************************************/
+/*****************************************************************************************************/
+
+div.expandableTab{
+	position: relative;
+	width: auto;
+	height: auto;
+	min-width: 150px;
+	min-height: 40px;
+	padding: 0px;
+	padding-top: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin: 0px;
+	margin-left: 6px;
+	margin-right: 6px;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border: 2px solid #BA7F00;
+	border-top: none;
+	background: #FFFAEE;
+	color: #BA7F00;
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+div.expandableTab:hover {
+	background: #FFF7E4;
+	opacity: 1;
+}
+
+div.expandableTab > div#menuOptions {
+	height: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+
+div.expandableTab > div#menuOptions > span {
+	padding: 10px;
+	border-bottom: 1px solid #BA7F00;
+	text-align: center;
+	display: block;
+}
+
+div.expandableTab > div#menu {
+	padding: 10px;
+	text-align: center;
+	display: block;
+}
+
+table.listTable{
+	width: 80%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2px;
+	border: 1px solid #BA7F00; 
+	color: #BA7F00;
+	text-align: left;
+	background: #FFFAEE;	
+	opacity: 0.75;
+}
+
+table.listTable td {
+	padding: 5px;
+}
+
+table.listTable tr:hover {
+	background: #FFF7E4;
+	opacity: 1;
+}
+
+/*****************************************************************************************************/
+/************************************* FIN OTROS POR CLASS *******************************************/
+/*****************************************************************************************************/

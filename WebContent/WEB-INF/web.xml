@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	
+	<display-name>proyecto</display-name>
+	
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	
+	<!-- LAYOUTS -->
+	<servlet>
+		<servlet-name>HomeLayout</servlet-name>
+		<jsp-file>/jsp/layouts/home.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HomeLayout</servlet-name>
+		<url-pattern>/HomeLayout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MainUserPageLayout</servlet-name>
+		<jsp-file>/jsp/layouts/mainUserPage.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MainUserPageLayout</servlet-name>
+		<url-pattern>/MainUserPageLayout</url-pattern>
+	</servlet-mapping>
+	
+	<!-- REST SERVICES -->
+	<servlet>
+		<servlet-name>Jersey REST Service</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>com.boceto.rest.services</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Jersey REST Service</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+	<!-- HELP about REST services http://www.vogella.com/articles/REST/article.html -->
+	<!-- END REST SERVICES -->
+	
+	<!-- FUNCTIONALITIES -->
+	<servlet>
+		<servlet-name>UserInfoJSP</servlet-name>
+		<jsp-file>/jsp/functionalities/common/userInfo.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserInfoJSP</servlet-name>
+		<url-pattern>/UserInfoJSP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginJSP</servlet-name>
+		<jsp-file>/jsp/functionalities/common/login.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginJSP</servlet-name>
+		<url-pattern>/LoginJSP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistrationJSP</servlet-name>
+		<jsp-file>/jsp/functionalities/common/registration.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrationJSP</servlet-name>
+		<url-pattern>/RegistrationJSP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ExpertRegistrationJSP</servlet-name>
+		<jsp-file>/jsp/functionalities/expert/registration.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExpertRegistrationJSP</servlet-name>
+		<url-pattern>/ExpertRegistrationJSP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ExpertMainViewJSP</servlet-name>
+		<jsp-file>/jsp/functionalities/expert/main.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExpertMainViewJSP</servlet-name>
+		<url-pattern>/ExpertMainViewJSP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RequesterMainViewJSP</servlet-name>
+		<jsp-file>/jsp/functionalities/requester/main.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequesterMainViewJSP</servlet-name>
+		<url-pattern>/RequesterMainViewJSP</url-pattern>
+	</servlet-mapping>
+	
+	
+	<context-param>
+		<param-name>lang_package</param-name>
+		<param-value>com.boceto.lang</param-value>
+	</context-param>
+	
+	<jsp-config>
+		<taglib>
+			<taglib-uri>languageTLD</taglib-uri>
+			<taglib-location>/WEB-INF/tlds/language.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+	
+	<resource-ref>
+		<description>MySQL DDBB Connection</description>
+		<res-ref-name>jdbc/proyecto</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+	
+	<welcome-file-list>
+		<welcome-file>InitServlet</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+</web-app>
